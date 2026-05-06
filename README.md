@@ -60,13 +60,18 @@ Key data quality steps:
 
 
 ### 3. Data Analysis (`part_3.sql`)
-SQL queries were used to extract insights such as:
 
-- 🎮 Top Gaming videos by country
-- 🎤 Popularity of “BTS” content globally
-- 📅 Most viewed videos per country/month (with engagement ratios)
-- 📊 Top content categories by country
-- 📺 Most prolific YouTube channels
+SQL queries were used to extract insights across multiple dimensions of YouTube trends:
+
+- 🎮 **Gaming content performance**: Top gaming videos were largely consistent across Western countries, with titles like *Clash Royale* and creators such as *IShowSpeed* frequently appearing in top rankings.
+
+- 🎤 **BTS content popularity**: Korea recorded the highest number of BTS-related videos (468), followed by India, indicating strong international fan engagement outside of the group’s home country.
+
+- 📅 **Temporal viewing trends**: In early 2024, MrBeast dominated most countries’ top-viewed videos, while later months saw increased diversity with creators like BabyMonster and Mythri Movie Makers emerging.
+
+- 📊 **Category dominance by country**: Entertainment dominated in most regions, while Gaming was stronger in North America and Science & Technology performed strongly in countries such as Japan and Mexico.
+
+- 📺 **Channel performance**: Vijay Television was the most prolific channel overall, producing 2,049 distinct videos, significantly higher than the next highest channel.
 
 ### Key Insights:
 - Global trends exist (e.g. shared top creators like *MrBeast*)
@@ -75,12 +80,16 @@ SQL queries were used to extract insights such as:
 
 
 ## Business Problem (`part_4.sql`)
+
 **Which YouTube category maximises trending potential for a new channel?**
 
 ### Key Findings:
-- **Film & Animation** shows consistent growth in average views globally
-- **Science & Technology** performs strongly in select regions (e.g. Japan, Mexico)
-- **Gaming** is high-volume but declining in average views
+
+- **Film & Animation emerges as the most consistently strong-performing category globally**, demonstrating sustained upward trends in average views over time and strong cross-country engagement, indicating high viral potential and broad audience appeal.
+
+- **Science & Technology exhibits strong regional performance heterogeneity**, achieving high engagement in markets such as Japan and Mexico, suggesting that its success is more geographically concentrated and audience-specific.
+
+- **Gaming remains a high-volume category but shows signs of declining efficiency**, with a large number of uploads but comparatively lower average views per video over time, indicating saturation and reduced marginal engagement.
 
 ### ✅ Final Recommendation:
 - Focus on **Film & Animation** for global reach
